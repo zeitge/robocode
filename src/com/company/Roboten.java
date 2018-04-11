@@ -13,17 +13,6 @@ public class Roboten extends Robot {
         }
     }
 
-    public void onBulletHit(BulletHitEvent e) {
-
-    }
-
-    public void onHitByBullet(HitByBulletEvent e) {
-
-    }
-
-    public void onHitRobot(HitRobotEvent e) {
-
-    }
 
     public void onHitWall(HitWallEvent e) {
 
