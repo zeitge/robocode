@@ -4,7 +4,6 @@ import robocode.*;
 
 public class Roboten extends Robot {
 
-    @Override
     public void run() {
         while(true) {
             ahead(100);
@@ -14,27 +13,24 @@ public class Roboten extends Robot {
         }
     }
 
-    @Override
     public void onBulletHit(BulletHitEvent e) {
 
     }
 
-    @Override
     public void onHitByBullet(HitByBulletEvent e) {
 
     }
 
-    @Override
     public void onHitRobot(HitRobotEvent e) {
 
     }
 
-    @Override
     public void onHitWall(HitWallEvent e) {
+
+        System.out.print("hihi");
 
     }
 
-    @Override
     public void onScannedRobot(ScannedRobotEvent e) {
 
     }
