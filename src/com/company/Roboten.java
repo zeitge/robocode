@@ -2,7 +2,7 @@ package com.company;
 
 import robocode.*;
 
-public class Roboten extends Robot {
+public class Roboten extends AdvancedRobot {
 
     @Override
     public void run() {
