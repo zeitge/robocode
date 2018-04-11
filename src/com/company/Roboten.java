@@ -1,42 +1,40 @@
 package com.company;
 
 import robocode.*;
+import java.util.Random;
 
-public class Roboten extends Robot {
+public class Roboten extends AdvancedRobot {
 
-    @Override
+    int fart = 5;
+    int fram = 1000;
+
     public void run() {
         while(true) {
-            ahead(100);
-            ahead(-100);
-            turnGunLeft(90);
-            fire(3);
+            fram = fram + 100;
+            setTurnRight(10000);
+            setMaxVelocity(fart++);
+            ahead(fram);
         }
     }
 
-    @Override
     public void onBulletHit(BulletHitEvent e) {
 
     }
 
-    @Override
     public void onHitByBullet(HitByBulletEvent e) {
 
     }
 
-    @Override
     public void onHitRobot(HitRobotEvent e) {
 
     }
 
-    @Override
     public void onHitWall(HitWallEvent e) {
 
     }
 
-    @Override
     public void onScannedRobot(ScannedRobotEvent e) {
-
+        fire(3);
     }
 
 }
