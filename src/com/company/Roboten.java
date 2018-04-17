@@ -14,15 +14,12 @@ public class Roboten extends Robot {
         }
     }
 
-
-
     public void onBulletHit(BulletHitEvent e) {
 
     }
 
-
     public void onHitByBullet(HitByBulletEvent e) {
-
+      turnLeft(180);
     }
 
 
@@ -39,5 +36,6 @@ public class Roboten extends Robot {
     public void onScannedRobot(ScannedRobotEvent e) {
 
     }
+
 
 }
