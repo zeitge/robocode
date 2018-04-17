@@ -3,6 +3,8 @@ package com.company;
 import robocode.*;
 import robocode.util.Utils;
 
+import java.awt.*;
+
 public class Frankenstein extends AdvancedRobot {
     int fart = 5;
     int fram = 1000;
@@ -30,6 +32,7 @@ public class Frankenstein extends AdvancedRobot {
     }
 
     public void onHitRobot(HitRobotEvent e) {
+        setColors(Color.RED, Color.RED, Color.RED);
         if(e.getBearing() > -90 && e.getBearing() <= 90) {
             setTurnRight(e.getBearing() + 90);
             setBack(100);
